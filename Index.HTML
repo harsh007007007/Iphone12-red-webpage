@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Iphone 12</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <nav>
+       <div class="logo">
+        <img src= "logo apple.PNG"/>
+        </div>
+		  <div class ="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Iphone case</a></li>
+                <li><a href="#">Airpods Gen4</a></li>
+                <li><a href="#">Macbook</a></li>
+                <li><a href="#">Compare Iphone</a></li>
+                <li><a href="#">Add to Cart</a></li>
+            </ul>
+            </div>
+	</nav>
+    
+	<div class="info">
+        <div class="overlay"></div>
+        <img src="iphone12.jpg" class="iphone">
+        <div id="circle">
+            <div class="feature one">
+                <img src="camera.jpg">
+                <div>
+                    <h1>Camera</h1>
+                    <p>Triple 14MP ultra wide, telephoto cameras with night mode</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="battery.png">
+                <div>
+                    <h1>Battery Life</h1>
+                    <p>6000mAh, 800hrs standby</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="display.png">
+                <div>
+                    <h1>Display</h1>
+                    <p>6.8", Super Retina XDR display</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="processor.png"> 
+                <div>
+                    <h1>Processor</h1>
+                    <p>A14 Bionic chip with fourth gen neural engine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+        <div class="control">
+            <img src="up.png" id="upBtn">
+            <h2>Iphone 12 Features</h2>
+            <img src="down.png" id="downBtn">
+        </div>
+	
+</div>
+    
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+        
+        var rotateval=circle.style.transform;
+        var rotatesum;
+        
+        upBtn.onclick = function(){
+            rotatesum=rotateval + "rotate(-90deg)";
+            circle.style.transform= rotatesum;
+            rotateval=rotatesum;
+        }
+        
+        downBtn.onclick = function(){
+            rotatesum=rotateval + "rotate(90deg)";
+            circle.style.transform= rotatesum;
+            rotateval=rotatesum;
+        }
+    </script>
+    
+</body>
+
+
+</html>
