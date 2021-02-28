@@ -1,0 +1,138 @@
+.main{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background:FireBrick;	
+}
+nav{
+    left:700px;
+	width:80%;
+	position:absolute;
+	Margin:20px auto;
+	display:flex;
+	align-items:center;
+    float:left;
+}
+
+nav a{
+    
+	color:#fff;
+	text-decoration:none;
+}
+nav ul{
+   
+	list-style-type:none;
+	text-align:right;
+}
+nav li{
+   
+	flex:1;	
+	display:right;
+	float:left;
+	margin: 0 20px;
+	text-align: right;
+	font-size:X-large;
+}
+.info{
+    width:1000px;
+    Height:1000px;
+    position:absolute;
+    top:50%;
+    left:-10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width:1000px;
+    height:1000px;
+    position: absolute;
+    top:0;
+    left:15%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature img{
+    width: 70px;
+    
+}
+.feature{
+    position: absolute; 
+    display: flex;
+}
+.feature div{
+    margin-left:30px;
+    
+}
+.feature div h1{
+    color:white;
+}
+.feature div p{
+    margin-top: 8px;
+    color: white;
+}
+.one{
+   top:425px;
+    right:-150px;
+}
+.two{
+     top:150px;
+    left:350px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom:450px;
+    left:50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom:100px;
+    right:300px;
+    transform: rotate(-270deg);
+}
+.iphone{
+    width:450px;
+    height: 600px;
+    position: absolute;
+    top:53%;
+    left: 28%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.control{
+    position: absolute;
+    right: 10%;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.control h2{
+    margin: 15px 0;
+    color :#fff;
+}
+#upBtn{
+    width:30px;
+    height: 30px;
+    cursor:pointer;
+    
+}
+#downBtn{
+    width:30px;
+    height: 30px;
+    cursor:pointer;
+    
+}
+.overlay{
+    width:0;
+    height:0;
+    border-top: 700px solid #fff ;
+    border-bottom: 650px solid #fff;
+    border-right: 250px solid transparent;
+    border-left: 470px solid #fff;
+    position: absolute;
+    left:18%;
+    top:-20%;    
+}
